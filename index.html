@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment1</title>
+    <style>
+      .header {
+        border: 3px solid black;
+        padding: 15px 25px;
+      }
+      h1 {
+        text-align: left;
+        text-transform: capitalize;
+        color: black;
+        font-size: 25px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: sans-serif;
+      }
+      p{
+        margin: 0;
+        font-family: sans-serif;
+      }
+      table {
+        width: 100%;
+      }
+      table,
+      tr,
+      th,
+      td {
+        text-align: center;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-collapse: collapse;
+        font-family: sans-serif;
+      }
+      tr,
+      td,
+      th {
+        padding: 15px 15px;
+      }
+      .inv {
+        display: flex;
+      }
+      .lft {
+        text-align: left;
+      }
+      .lft-th{
+        text-align: left;
+        padding-left: 23px;
+      }
+      .tabl-h1 {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 40px;
+      }
+      .nstd-tbl {
+        border: none;
+      }
+      .nstd-row {
+        border: none;
+        padding: 10px;
+      }
+      .nstd-th {
+        border: none;
+        padding: 5px 10px;
+        text-align: left;
+      }
+      .nstd-td {
+        border: none;
+        padding: 0 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Zylker Electronics Hub</h1>
+      <p>
+        Northern Street,<br />Greater South Avenue,<br />New York,<br />New York
+        10001,U.S.A.
+      </p>
+    </div>
+    <table>
+      <tr>
+        <td colspan="2" class="lft">
+          <!-- Nested Table Starts Here -->
+          <table class="nstd-tbl">
+            <tr class="nstd-row">
+              <th class="nstd-th">Invoice</th>
+              <td class="nstd-td">IND-00128</td>
+            </tr>
+            <tr class="nstd-row">
+              <th class="nstd-th">Invoice Date</th>
+              <td class="nstd-td">5th August,2006</td>
+            </tr>
+            <tr class="nstd-row">
+              <th class="nstd-th">Terms</th>
+              <td class="nstd-td">Due on Recipt</td>
+            </tr>
+            <tr class="nstd-row">
+              <th class="nstd-th">Due Date</th>
+              <td class="nstd-td">19-01-2005</td>
+            </tr>
+          </table>
+          <!-- Nested Table Ends Here -->
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><b>Bill To</b></td>
+        <td colspan="3"><b>Ship To</b></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="lft-th">
+          <b>MS.Mary D.Dunton</b><br /><span
+            >1234 Hinkle Lake Road<br />
+            Needham <br />02192 Maine</span
+          >
+        </td>
+        <td colspan="3" class="lft-th">
+          <span
+            >1234 Hinkle Lake Road<br />
+            Needham <br />02192 Maine</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <th>#</th>
+        <th class="lft">Item Description</th>
+        <th>Qty</th>
+        <th>Rate</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td><b>1.</b></td>
+        <td class="lft">
+          <b>Camera</b><br /><span
+            >DSLR Camera with advance shooting capabilities</span
+          >
+        </td>
+        <td>1.00</td>
+        <td>$899.00</td>
+        <td>899</td>
+      </tr>
+      <tr>
+        <td><b>2.</b></td>
+        <td class="lft">
+          <b>Fitness Tracker</b><br /><span
+            >Activity tracker with heart rate monitoring capabilities</span
+          >
+        </td>
+        <td>1.00</td>
+        <td>$129.00</td>
+        <td>$129.00</td>
+      </tr>
+      <tr>
+        <td><b>3.</b></td>
+        <td class="lft">
+          <b>Laptop</b><br /><span
+            >Lightweight laptop with a powerful processor capabilities</span
+          >
+        </td>
+        <td>1.00</td>
+        <td>$1,199.00</td>
+        <td>$1,199.00</td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Sub Total</b></td>
+        <td><b>$2,227.00</b></td>
+      </tr>
+      <tr>
+        <td colspan="5"><h1 class="tabl-h1">INVOICE</h1></td>
+      </tr>
+    </table>
+  </body>
+</html>
